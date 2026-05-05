@@ -3,9 +3,9 @@ import json
 import time
 
 # ===== LOSANT CONFIG =====
-DEVICE_ID = "69dce1266d988936acb81a3a"
-ACCESS_KEY = "38dddd09-5391-423d-9be4-3724700e1cd9"
-ACCESS_SECRET = "c683afb5ab990402507303dbc89b98328ff6547d49add5be4db6af51bdaaedf8"
+DEVICE_ID = "xxx"
+ACCESS_KEY = "xx-xx-xx-xx-xx"
+ACCESS_SECRET = "xx"
 
 LOSANT_BROKER = "broker.losant.com"
 
