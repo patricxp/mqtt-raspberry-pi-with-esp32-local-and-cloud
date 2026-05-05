@@ -5,9 +5,9 @@
 #include <LiquidCrystal_I2C.h>
 
 // Konfigurasi WiFi & MQTT
-const char* ssid = "mqttits";
-const char* password = "12345678";
-const char* mqtt_server = "10.244.178.128";
+const char* ssid = "mqttits"; //sesuaikan nama wifi
+const char* password = "12345678"; //sesuaikan password wifi
+const char* mqtt_server = "10.244.178.128"; //sesuaikan ip server (raspberry pi)
 
 WiFiClient espClient;
 PubSubClient client(espClient);
