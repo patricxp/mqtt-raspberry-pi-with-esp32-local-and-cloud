@@ -7,7 +7,7 @@ Proyek ini adalah sistem monitoring dan kontrol perangkat IoT berbasis **ESP32**
 ## 🏗️ Arsitektur Sistem
 Sistem ini menggunakan skema komunikasi dual-broker:
 1.  **ESP32**: Membaca sensor dan mengirim data ke broker lokal.
-2.  **Python Bridge (`lolosa.py`)**: Menghubungkan data dari broker lokal ke cloud Losant.
+2.  **Python Bridge (`losant.py`)**: Menghubungkan data dari broker lokal ke cloud Losant.
 3.  **Losant Cloud**: Platform untuk visualisasi data dan pengiriman perintah kontrol.
 
 ---
@@ -24,7 +24,7 @@ Sistem ini menggunakan skema komunikasi dual-broker:
 ## ⚠️ Bagian yang WAJIB Diganti
 Pastikan Anda menyesuaikan konfigurasi berikut agar program berjalan di lingkungan Anda:
 
-### 1. Konfigurasi pada `nodemcu32_UTS_pak_zaman.ino`
+### 1. Konfigurasi pada `nodemcu32_losant.ino`
 * **WiFi**: Ganti `ssid` dan `password` sesuai jaringan Anda.
 * **MQTT Server**: Ganti `mqtt_server` dengan IP address broker lokal (misal: IP laptop atau Raspberry Pi).
 
@@ -46,5 +46,5 @@ Pastikan Anda menyesuaikan konfigurasi berikut agar program berjalan di lingkung
 ## 🚀 Cara Penggunaan
 1.  Jalankan broker MQTT lokal (contoh: Mosquitto).
 2.  Unggah kode `.ino` ke ESP32 setelah menyesuaikan IP broker.
-3.  Jalankan skrip Python: `python lolosa.py`.
+3.  Jalankan skrip Python: `python losant.py`.
 4.  Pantau data pada LCD dan dashboard Losant.
