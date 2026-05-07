@@ -42,7 +42,7 @@ Pastikan Anda menyesuaikan konfigurasi berikut agar program berjalan di lingkung
 | **LCD I2C** | `SDA/SCL` | Address: `0x27` |
 
 ---
-# logika
+## logika
 if suhu > 36:
 status = "PANAS"
 elif suhu < 26:
