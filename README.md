@@ -42,13 +42,16 @@ Pastikan Anda menyesuaikan konfigurasi berikut agar program berjalan di lingkung
 | **LCD I2C** | `SDA/SCL` | Address: `0x27` |
 
 ---
-## logika
+## 🧠 Logika Status
+
+```python
 if suhu > 36:
-status = "PANAS"
+    status = "PANAS"
 elif suhu < 26:
-status = "DINGIN"
+    status = "DINGIN"
 else:
-status = "NORMAL"
+    status = "NORMAL"
+```
 ---
 
 ## 🚀 Cara Penggunaan
