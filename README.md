@@ -42,6 +42,14 @@ Pastikan Anda menyesuaikan konfigurasi berikut agar program berjalan di lingkung
 | **LCD I2C** | `SDA/SCL` | Address: `0x27` |
 
 ---
+# logika
+if suhu > 36:
+status = "PANAS"
+elif suhu < 26:
+status = "DINGIN"
+else:
+status = "NORMAL"
+---
 
 ## 🚀 Cara Penggunaan
 1.  Jalankan broker MQTT lokal (contoh: Mosquitto).
